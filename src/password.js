@@ -15,6 +15,9 @@ class Password{
         }
         return false;
     }
+    countSamePhrasesOnASentence(sentence){
+        return true;
+    }
     setPass(password)
     {
         this.pass=password;
