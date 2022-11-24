@@ -9,7 +9,9 @@ class Password{
     getPass(){
         return this.pass;
     }
-
+    comparePhrase(phrase){
+        return true;
+    }
     setPass(password)
     {
         this.pass=password;

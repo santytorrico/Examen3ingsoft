@@ -14,3 +14,13 @@ describe("ingresar password", () => {
         expect(newPassword.getPass()).toEqual("Es");
     });
 });
+describe("ingresar password", () => {
+    let newPassword;
+    beforeEach(() => {
+        newPassword=new Password();
+      });
+    it("Verifica que una frase dada sea igual al valor de password", () => {
+        newPassword.setPass("Hola")
+        expect(newPassword.comparePhrase("hola")).toEqual(true);
+    });
+});
