@@ -29,6 +29,6 @@ describe("ingresar password", () => {
     });
     it("Verifica si una oracion tiene una misma frase", () => {
         newPassword.setPass("Hola como estas")
-        expect(newPassword.countSamePhrasesOnASentence("Hola")).toEqual(true);
+        expect(newPassword.countSamePhrasesOnASentence("Hola como estas")).toEqual(true);
     });
 });

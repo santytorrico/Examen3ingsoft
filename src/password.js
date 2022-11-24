@@ -16,7 +16,7 @@ class Password{
         return false;
     }
     countSamePhrasesOnASentence(sentence){
-        return true;
+        return this.comparePhrase(sentence);
     }
     setPass(password)
     {
