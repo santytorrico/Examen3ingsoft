@@ -10,7 +10,10 @@ class Password{
         return this.pass;
     }
     comparePhrase(phrase){
-        return true;
+        if(this.pass==phrase){
+            return true;
+        }
+        return false;
     }
     setPass(password)
     {

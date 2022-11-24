@@ -21,6 +21,10 @@ describe("ingresar password", () => {
       });
     it("Verifica que una frase dada sea igual al valor de password", () => {
         newPassword.setPass("Hola")
-        expect(newPassword.comparePhrase("hola")).toEqual(true);
+        expect(newPassword.comparePhrase("Hola")).toEqual(true);
+    });
+    it("Verifica que una frase dada no sea igual al valor de password", () => {
+        newPassword.setPass("Hola")
+        expect(newPassword.comparePhrase("alo")).toEqual(false);
     });
 });
